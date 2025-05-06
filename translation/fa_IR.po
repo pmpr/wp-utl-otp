@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr OTP Utility\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2025-05-02 16:59+0330\n"
+"POT-Creation-Date: 2025-05-05 15:07+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -13,9 +13,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
-"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
+"_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Generator: Poedit 3.6\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -24,6 +24,15 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: vendor\n"
 "X-Poedit-SearchPathExcluded-3: asset\n"
 "X-Poedit-SearchPathExcluded-4: build\n"
+
+#: src/Pmpr/Utility/OTP/Hook.php:49
+msgid "Your OTP Code"
+msgstr "رمز یکبار مصرف شما"
+
+#: src/Pmpr/Utility/OTP/Hook.php:51
+#, php-format
+msgid "Your OTP code is: %s"
+msgstr "رمز یکبار مصرف شما: %s"
 
 #: src/Pmpr/Utility/OTP/Model/Request.php:25
 msgid "OTP Requests"
@@ -49,8 +58,7 @@ msgstr "ایمیل یا موبایل"
 msgid "Type"
 msgstr "نوع"
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:53
-#: src/Pmpr/Utility/OTP/Setting.php:87
+#: src/Pmpr/Utility/OTP/Model/Request.php:53 src/Pmpr/Utility/OTP/Setting.php:89
 msgid "Email"
 msgstr "ایمیل"
 
@@ -86,32 +94,39 @@ msgstr "ایجاد شده در"
 msgid "Your entered value is not a mobile or email address."
 msgstr "مقداری که وارد کرده‌اید موبایل یا ایمیل معتبری نیست."
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:119
-#: src/Pmpr/Utility/OTP/Model/Request.php:194
+#: src/Pmpr/Utility/OTP/Model/Request.php:103
+msgid ""
+"User registration is currently disabled. Please try again later or contact "
+"the site administrator."
+msgstr ""
+"ثبت‌نام کاربران در حال حاضر غیرفعال است. لطفاً بعداً دوباره امتحان کنید یا با "
+"مدیر سایت تماس بگیرید."
+
+#: src/Pmpr/Utility/OTP/Model/Request.php:134
+#: src/Pmpr/Utility/OTP/Model/Request.php:221
 #, php-format
 msgid "Please try again after %s."
 msgstr "لطفا پس از %s دوباره تلاش کنید."
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:268
+#: src/Pmpr/Utility/OTP/Model/Request.php:295
 msgid "You've entered the wrong OTP too many times. Please request a new code."
-msgstr ""
-"تعداد تلاش‌های اشتباه شما حد مجاز را رد کرد. لطفا کد جدیدی درخواست کنید."
+msgstr "تعداد تلاش‌های اشتباه شما حد مجاز را رد کرد. لطفا کد جدیدی درخواست کنید."
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:276
+#: src/Pmpr/Utility/OTP/Model/Request.php:303
 msgid "OTP expired"
-msgstr "رمز یکبار مصرف منقضی شده است."
+msgstr "رمز یکبار مصرف منقضی شده است"
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:279
+#: src/Pmpr/Utility/OTP/Model/Request.php:306
 msgid "Incorrect OTP. Please try again."
 msgstr "رمز یکبار مصرف اشتباه است. لطفا دوباره تلاش کنید."
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:282
+#: src/Pmpr/Utility/OTP/Model/Request.php:309
 msgid "OTP not found."
 msgstr "رمز یکبار مصرف یافت نشد."
 
-#: src/Pmpr/Utility/OTP/OTP.php:19
+#: src/Pmpr/Utility/OTP/OTP.php:18
 msgid "OTP Generator"
-msgstr ""
+msgstr "تولید کننده رمز یکبار مصرف"
 
 #: src/Pmpr/Utility/OTP/Setting.php:30
 msgid "OTP"
@@ -121,23 +136,23 @@ msgstr "رمز یکبار مصرف"
 msgid "OTP Setting"
 msgstr "تنظیمات رمز یکبار مصرف"
 
-#: src/Pmpr/Utility/OTP/Setting.php:43
+#: src/Pmpr/Utility/OTP/Setting.php:45
 msgid "General"
 msgstr "عمومی"
 
-#: src/Pmpr/Utility/OTP/Setting.php:45
+#: src/Pmpr/Utility/OTP/Setting.php:47
 msgid "General Configuration"
 msgstr "پیکربندی عمومی"
 
-#: src/Pmpr/Utility/OTP/Setting.php:48
+#: src/Pmpr/Utility/OTP/Setting.php:50
 msgid "OTP Limits"
 msgstr "محدودیت‌های رمز یکبار مصرف"
 
-#: src/Pmpr/Utility/OTP/Setting.php:52
+#: src/Pmpr/Utility/OTP/Setting.php:54
 msgid "Validity Limit"
 msgstr "مدت زمان اعتبار"
 
-#: src/Pmpr/Utility/OTP/Setting.php:53
+#: src/Pmpr/Utility/OTP/Setting.php:55
 msgid ""
 "Duration (in minutes) that a code remains valid. After this period, the code "
 "expires and becomes unusable."
@@ -145,23 +160,23 @@ msgstr ""
 "مدت زمانی (بر حسب دقیقه) که کد معتبر است. پس از این زمان، کد منقضی می‌شود و "
 "دیگر قابل استفاده نیست."
 
-#: src/Pmpr/Utility/OTP/Setting.php:57
+#: src/Pmpr/Utility/OTP/Setting.php:59
 msgid "Max Attempts"
 msgstr "تلاش‌های مجاز برای ورود کد"
 
-#: src/Pmpr/Utility/OTP/Setting.php:58
+#: src/Pmpr/Utility/OTP/Setting.php:60
 msgid ""
-"Number of times a user is allowed to enter an incorrect code. After "
-"exceeding this limit, the code is failed and a new one must be requested."
+"Number of times a user is allowed to enter an incorrect code. After exceeding "
+"this limit, the code is failed and a new one must be requested."
 msgstr ""
 "تعداد دفعاتی که کاربر مجاز است کد اشتباه وارد کند. پس از این تعداد، کد فعلی "
 "غیرفعال می‌شود و باید کد جدید دریافت شود."
 
-#: src/Pmpr/Utility/OTP/Setting.php:62
+#: src/Pmpr/Utility/OTP/Setting.php:64
 msgid "Request Limit"
 msgstr "سقف درخواست"
 
-#: src/Pmpr/Utility/OTP/Setting.php:63
+#: src/Pmpr/Utility/OTP/Setting.php:65
 msgid ""
 "The number of times a user can request a new code in a period. after this "
 "limit a cooldown started."
@@ -169,19 +184,19 @@ msgstr ""
 "تعداد دفعاتی که یک کاربر می‌تواند در طول یک روز کد جدید درخواست کند. بیشتر از "
 "این مقدار کاربر تا مدت زمانی نمی‌تواند درخواست جدیدی ارسال کند."
 
-#: src/Pmpr/Utility/OTP/Setting.php:68
+#: src/Pmpr/Utility/OTP/Setting.php:70
 msgid "Rate Limiting Mode"
 msgstr "نوع محدودیت زمانی"
 
-#: src/Pmpr/Utility/OTP/Setting.php:69
+#: src/Pmpr/Utility/OTP/Setting.php:71
 msgid "Fixed"
 msgstr "ثابت"
 
-#: src/Pmpr/Utility/OTP/Setting.php:70
+#: src/Pmpr/Utility/OTP/Setting.php:72
 msgid "Exponential"
 msgstr "نمایی"
 
-#: src/Pmpr/Utility/OTP/Setting.php:71
+#: src/Pmpr/Utility/OTP/Setting.php:73
 msgid ""
 "Defines whether the cooldown time after exceeding limits remains fixed or "
 "increases exponentially with repeated violations."
@@ -189,11 +204,11 @@ msgstr ""
 "مشخص می‌کند که زمان توقف پس از رسیدن به سقف درخواست، ثابت باشد یا به‌صورت "
 "افزایشی (نمایی) با هر بار تخطی بیشتر شود."
 
-#: src/Pmpr/Utility/OTP/Setting.php:75
+#: src/Pmpr/Utility/OTP/Setting.php:77
 msgid "Initial Wait"
 msgstr "تاخیر اولیه"
 
-#: src/Pmpr/Utility/OTP/Setting.php:76
+#: src/Pmpr/Utility/OTP/Setting.php:78
 msgid ""
 "Cooldown period (in minutes) during which new requests are blocked after "
 "reaching the daily request limit."
@@ -201,31 +216,31 @@ msgstr ""
 "مدت زمانی (بر حسب دقیقه) که پس از رسیدن به سقف درخواست، دیگر به درخواست‌های "
 "کاربر پاسخ داده نمی‌شود."
 
-#: src/Pmpr/Utility/OTP/Setting.php:82
+#: src/Pmpr/Utility/OTP/Setting.php:84
 msgid "Notification"
 msgstr "اعلان"
 
-#: src/Pmpr/Utility/OTP/Setting.php:84
+#: src/Pmpr/Utility/OTP/Setting.php:86
 msgid "Notification Configuration"
 msgstr "پیکربندی اعلان"
 
-#: src/Pmpr/Utility/OTP/Setting.php:91
+#: src/Pmpr/Utility/OTP/Setting.php:93
 msgid "Email Subject"
 msgstr "موضوع ایمیل"
 
-#: src/Pmpr/Utility/OTP/Setting.php:95
-msgid "Email Content"
-msgstr "محتوای ایمیل"
-
-#: src/Pmpr/Utility/OTP/Setting.php:96
+#: src/Pmpr/Utility/OTP/Setting.php:94 src/Pmpr/Utility/OTP/Setting.php:99
 msgid "Code"
 msgstr "کد یکبار مصرف"
 
-#: src/Pmpr/Utility/OTP/Setting.php:97
+#: src/Pmpr/Utility/OTP/Setting.php:98
+msgid "Email Content"
+msgstr "محتوای ایمیل"
+
+#: src/Pmpr/Utility/OTP/Setting.php:100
 msgid "Expire"
 msgstr "انقضا"
 
-#: src/Pmpr/Utility/OTP/Setting.php:98
+#: src/Pmpr/Utility/OTP/Setting.php:101
 msgid "Website"
 msgstr "وب‌سایت"
 
