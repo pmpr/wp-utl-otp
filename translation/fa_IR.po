@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr OTP Utility\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2025-05-05 15:07+0330\n"
+"POT-Creation-Date: 2025-05-07 19:38+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -25,14 +25,25 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: asset\n"
 "X-Poedit-SearchPathExcluded-4: build\n"
 
-#: src/Pmpr/Utility/OTP/Hook.php:49
-msgid "Your OTP Code"
-msgstr "رمز یکبار مصرف شما"
+#: src/Pmpr/Utility/OTP/Email.php:19
+msgid "OTP Email"
+msgstr "ایمیل رمز یکبار مصرف"
 
-#: src/Pmpr/Utility/OTP/Hook.php:51
-#, php-format
-msgid "Your OTP code is: %s"
-msgstr "رمز یکبار مصرف شما: %s"
+#: src/Pmpr/Utility/OTP/Email.php:20
+msgid "Configure OTP"
+msgstr "پیکربندی رمز یکبار مصرف"
+
+#: src/Pmpr/Utility/OTP/Email.php:23
+msgid "Code"
+msgstr "کد یکبار مصرف"
+
+#: src/Pmpr/Utility/OTP/Email.php:24
+msgid "Expire"
+msgstr "انقضا"
+
+#: src/Pmpr/Utility/OTP/Email.php:25
+msgid "Website"
+msgstr "وب‌سایت"
 
 #: src/Pmpr/Utility/OTP/Model/Request.php:25
 msgid "OTP Requests"
@@ -58,7 +69,7 @@ msgstr "ایمیل یا موبایل"
 msgid "Type"
 msgstr "نوع"
 
-#: src/Pmpr/Utility/OTP/Model/Request.php:53 src/Pmpr/Utility/OTP/Setting.php:89
+#: src/Pmpr/Utility/OTP/Model/Request.php:53
 msgid "Email"
 msgstr "ایمیل"
 
@@ -216,31 +227,22 @@ msgstr ""
 "مدت زمانی (بر حسب دقیقه) که پس از رسیدن به سقف درخواست، دیگر به درخواست‌های "
 "کاربر پاسخ داده نمی‌شود."
 
-#: src/Pmpr/Utility/OTP/Setting.php:84
-msgid "Notification"
-msgstr "اعلان"
+#~ msgid "Your OTP Code"
+#~ msgstr "رمز یکبار مصرف شما"
 
-#: src/Pmpr/Utility/OTP/Setting.php:86
-msgid "Notification Configuration"
-msgstr "پیکربندی اعلان"
+#, php-format
+#~ msgid "Your OTP code is: %s"
+#~ msgstr "رمز یکبار مصرف شما: %s"
 
-#: src/Pmpr/Utility/OTP/Setting.php:93
-msgid "Email Subject"
-msgstr "موضوع ایمیل"
+#~ msgid "Notification"
+#~ msgstr "اعلان"
 
-#: src/Pmpr/Utility/OTP/Setting.php:94 src/Pmpr/Utility/OTP/Setting.php:99
-msgid "Code"
-msgstr "کد یکبار مصرف"
+#~ msgid "Notification Configuration"
+#~ msgstr "پیکربندی اعلان"
 
-#: src/Pmpr/Utility/OTP/Setting.php:98
-msgid "Email Content"
-msgstr "محتوای ایمیل"
+#~ msgid "Email Subject"
+#~ msgstr "موضوع ایمیل"
 
-#: src/Pmpr/Utility/OTP/Setting.php:100
-msgid "Expire"
-msgstr "انقضا"
-
-#: src/Pmpr/Utility/OTP/Setting.php:101
-msgid "Website"
-msgstr "وب‌سایت"
+#~ msgid "Email Content"
+#~ msgstr "محتوای ایمیل"
 
